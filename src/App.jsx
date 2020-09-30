@@ -7,6 +7,7 @@ import DetailBook from "./Components/Home/DetailBook";
 import NotFound from "./Pages/NotFound";
 import "./Styles/Index.css";
 
+
 function App() {
   return (
     <Router>
