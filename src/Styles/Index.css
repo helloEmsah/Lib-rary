@@ -1,83 +1,137 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
 
-/* -------- */
-/*   HOME   */
-/* -------- */
+* {
+     font-family: "Fira Sans", sans-serif;
+     }
+  
+  /* ---------------- */
+  /*   LANDING PAGE   */
+  /* ---------------- */
 
-#leftLanding {
-  grid-column: 1;
-  margin: 25px 0px 0px 25px;
-}
-#rightLanding {
-  grid-column: 2;
-}
+  #leftLanding {
+      grid-column: 1;
+        margin: 25px 0px 0px 25px;
+        
+  }
 
-#landingPage {
-  overflow-x: hidden;
-  overflow-y: hidden;
-  font-family: "Fira Sans", sans-serif;
-  display: grid;
-}
+  #rightLanding {
+      grid-column: 2;
+      
+  }
 
-#iconHeaderContainer {
-  width: 130px;
-  height: 40px;
-}
+  #landingPage {
+      margin-left: 25px;
+        overflow-x: hidden;
+          overflow-y: hidden;
 
-#iconHeaderContainer .iconHeaderImage {
-  width: 100%;
-  height: 100%;
-}
+            display: grid;
+            
+  }
 
-#headerLandingContainer {
-  margin-top: 50px;
-  width: 440px;
-  height: 130px;
-}
+  #iconHeaderContainer {
+      width: 130px;
+        height: 40px;
+        
+  }
 
-#headerLandingContainer .headerLandingImage {
-  width: 100%;
-  height: 100%;
-}
+  #iconHeaderContainer .iconHeaderImage {
+      width: 100%;
+        height: 100%;
+        
+  }
 
-#subHeaderLandingContainer {
-  position: absolute;
-  bottom: 140px;
-  width: 400px;
-  height: 100px;
-}
+  #headerLandingContainer {
+      margin-top: 50px;
+        width: 440px;
+          height: 130px;
+          
+  }
 
-#subHeaderLandingContainer .subHeaderLandingImage {
-  width: 100%;
-  height: 100%;
-}
+  #headerLandingContainer .headerLandingImage {
+      width: 100%;
+        height: 100%;
+        
+  }
 
-#bookcaseLandingContainer {
-  float: right;
-  max-width: 80%;
-  height: 100vh;
-}
+  #subHeaderLandingContainer {
+      position: relative;
+        top: 50px;
+          width: 400px;
+            height: 100px;
+            
+  }
 
-#bookcaseLandingContainer .bookcaseLandingImage {
-  width: 100%;
-  height: 100%;
-}
+  #subHeaderLandingContainer .subHeaderLandingImage {
+      width: 100%;
+        height: 100%;
+        
+  }
 
-#homeButtonContainer {
-  position: absolute;
-  top: 410px;
-  left: 20px;
-  display: flex;
-}
+  #bookcaseLandingContainer {
+      float: right;
+        max-width: 80%;
+          height: 100vh;
+          
+  }
 
-#homeButtonContainer span {
-  margin-left: 15px;
-}
+  #bookcaseLandingContainer .bookcaseLandingImage {
+      width: 100%;
+        height: 100%;
+        
+  }
 
-#signUpButton {
-  width: 200px;
-}
+  #homeButtonContainer {
+      position: relative;
+        margin-left: -20px;
+          top: 100px;
+            left: 20px;
+              display: flex;
+              
+  }
 
-#signInButton {
-  width: 200px;
-}
+  #homeButtonContainer span {
+      margin-left: 15px;
+      
+  }
+
+  #signUpButton {
+      width: 200px;
+      
+  }
+
+  #signInButton {
+      width: 200px;
+      
+  }
+
+  #modalRegularText {
+      font-size: 18px;
+        text-align: center;
+        
+  }
+
+  /* ---------------- */
+  /*        SIDEBAR   */
+  /* ---------------- */
+
+  ul {
+      list-style-type: none;
+        font-size: 25px;
+          font-weight: normal;
+            color: #929292;
+            
+  }
+
+  #homeHeroImageContainer {
+      padding: 25px 0px 0px 0px;
+        width: 70vw;
+          height: 60vh;
+          
+  }
+
+  #homeHeroImageContainer .homeHeroImage {
+      width: 100%;
+        height: 100%;
+        
+  }
+
