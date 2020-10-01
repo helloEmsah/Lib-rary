@@ -1,6 +1,8 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Card, CardDeck, CardGroup, Container } from "react-bootstrap";
 import homeHeroImage from "../../Images/homeHeroImage.png";
+import profileIcon from "../../Images/profileIcon.png";
+import CardBook from "./CardBook";
 
 function Content() {
   return (
@@ -12,9 +14,8 @@ function Content() {
         <br />
         <div id="mainContent">
           <h1>List Book</h1>
-          <div id="contentWrapper">
-            <h1>Test</h1>
-          </div>
+          <CardBook />
+          {/* <div id="contentWrapper"></div> */}
         </div>
       </Container>
     </div>

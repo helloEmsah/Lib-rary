@@ -1,137 +1,155 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
 
 * {
-     font-family: "Fira Sans", sans-serif;
-     }
-  
-  /* ---------------- */
-  /*   LANDING PAGE   */
-  /* ---------------- */
+  font-family: "Fira Sans", sans-serif;
+}
 
-  #leftLanding {
-      grid-column: 1;
-        margin: 25px 0px 0px 25px;
-        
-  }
+/* ---------------- */
+/*   LANDING PAGE   */
+/* ---------------- */
 
-  #rightLanding {
-      grid-column: 2;
-      
-  }
+#leftLanding {
+  grid-column: 1;
+  margin: 25px 0px 0px 25px;
+}
 
-  #landingPage {
-      margin-left: 25px;
-        overflow-x: hidden;
-          overflow-y: hidden;
+#rightLanding {
+  grid-column: 2;
+}
 
-            display: grid;
-            
-  }
+#landingPage {
+  margin-left: 25px;
+  overflow-x: hidden;
+  overflow-y: hidden;
 
-  #iconHeaderContainer {
-      width: 130px;
-        height: 40px;
-        
-  }
+  display: grid;
+}
 
-  #iconHeaderContainer .iconHeaderImage {
-      width: 100%;
-        height: 100%;
-        
-  }
+#iconHeaderContainer {
+  width: 130px;
+  height: 40px;
+}
 
-  #headerLandingContainer {
-      margin-top: 50px;
-        width: 440px;
-          height: 130px;
-          
-  }
+#iconHeaderContainer .iconHeaderImage {
+  width: 100%;
+  height: 100%;
+}
 
-  #headerLandingContainer .headerLandingImage {
-      width: 100%;
-        height: 100%;
-        
-  }
+#headerLandingContainer {
+  margin-top: 50px;
+  width: 440px;
+  height: 130px;
+}
 
-  #subHeaderLandingContainer {
-      position: relative;
-        top: 50px;
-          width: 400px;
-            height: 100px;
-            
-  }
+#headerLandingContainer .headerLandingImage {
+  width: 100%;
+  height: 100%;
+}
 
-  #subHeaderLandingContainer .subHeaderLandingImage {
-      width: 100%;
-        height: 100%;
-        
-  }
+#subHeaderLandingContainer {
+  position: relative;
+  top: 50px;
+  width: 400px;
+  height: 100px;
+}
 
-  #bookcaseLandingContainer {
-      float: right;
-        max-width: 80%;
-          height: 100vh;
-          
-  }
+#subHeaderLandingContainer .subHeaderLandingImage {
+  width: 100%;
+  height: 100%;
+}
 
-  #bookcaseLandingContainer .bookcaseLandingImage {
-      width: 100%;
-        height: 100%;
-        
-  }
+#bookcaseLandingContainer {
+  float: right;
+  max-width: 80%;
+  height: 100vh;
+}
 
-  #homeButtonContainer {
-      position: relative;
-        margin-left: -20px;
-          top: 100px;
-            left: 20px;
-              display: flex;
-              
-  }
+#bookcaseLandingContainer .bookcaseLandingImage {
+  width: 100%;
+  height: 100%;
+}
 
-  #homeButtonContainer span {
-      margin-left: 15px;
-      
-  }
+#homeButtonContainer {
+  position: relative;
+  margin-left: -20px;
+  top: 100px;
+  left: 20px;
+  display: flex;
+}
 
-  #signUpButton {
-      width: 200px;
-      
-  }
+#homeButtonContainer span {
+  margin-left: 15px;
+}
 
-  #signInButton {
-      width: 200px;
-      
-  }
+#signUpButton {
+  width: 200px;
+}
 
-  #modalRegularText {
-      font-size: 18px;
-        text-align: center;
-        
-  }
+#signInButton {
+  width: 200px;
+}
 
-  /* ---------------- */
-  /*        SIDEBAR   */
-  /* ---------------- */
+#modalRegularText {
+  font-size: 18px;
+  text-align: center;
+}
 
-  ul {
-      list-style-type: none;
-        font-size: 25px;
-          font-weight: normal;
-            color: #929292;
-            
-  }
+/* ---------------- */
+/*        SIDEBAR   */
+/* ---------------- */
 
-  #homeHeroImageContainer {
-      padding: 25px 0px 0px 0px;
-        width: 70vw;
-          height: 60vh;
-          
-  }
+#sidebarLink ul {
+  list-style-type: none;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: normal;
+}
 
-  #homeHeroImageContainer .homeHeroImage {
-      width: 100%;
-        height: 100%;
-        
-  }
+#sidebarLink .linkText {
+  color: #929292;
+}
 
+#sidebarLink .linkText:hover {
+  color: black;
+}
+
+.linkTextSidebarLogout:hover {
+  color: black;
+}
+
+#homeHeroImageContainer {
+  padding: 25px 0px 0px 0px;
+  width: 70vw;
+  height: 60vh;
+}
+
+#homeHeroImageContainer .homeHeroImage {
+  width: 100%;
+  height: 100%;
+}
+
+#sidebarProfileImageContainer {
+  display: block;
+  margin: auto;
+  border: 4px solid #e5e5e5;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+#sidebarProfileImageContainer .sidebarProfileImage {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+#userInfo .userInfoName {
+  text-align: center;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+/* ---------------- */
+/*        SIDEBAR   */
+/* ---------------- */
