@@ -98,6 +98,11 @@
 /*        SIDEBAR   */
 /* ---------------- */
 
+#sidebar{
+  position: fixed;
+}
+
+
 #sidebarLink ul {
   list-style-type: none;
   text-decoration: none;
@@ -150,6 +155,98 @@
   line-height: 33px;
 }
 
+/* ------------- */
+/*     PROFILE   */
+/* ------------- */
+
+#profileWrapper .profileBackground {
+  background-color: #fdede6;
+  border-radius: 10px;
+}
+
+#profileWrapper .profileTitle {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 37px;
+  margin-bottom: 50px;
+}
+
+#profileWrapper .profileArea {
+  padding: 20px;
+}
+
+#profileWrapper .profileIcon {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  color: #8a8c90;
+  margin: 10px 0px 25px 10px;
+}
+
+#profileWrapper .profileName {
+  position: relative;
+  right: 20px;
+  top: 10px;
+
+  font-style: normal;
+
+  font-size: 14px;
+  font-weight: 800;
+  color: #050505;
+}
+
+#profileWrapper .profileDesc {
+  position: relative;
+  right: 20px;
+  width: 100px;
+  height: 16px;
+
+  font-size: 12px;
+  color: #8a8c90;
+}
+
+#profileWrapper .profilePictureContainer {
+  width: 196px;
+  height: 200px;
+}
+
+#profileWrapper .profilePictureImage {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
 /* ---------------- */
-/*        SIDEBAR   */
+/*      My Library  */
 /* ---------------- */
+
+#bookImageContainer {
+  width: 180px;
+  height: 250px;
+}
+
+#bookImageContainer .bookImage {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+#bookCardDescription .bookTitle {
+  margin-top: 10px;
+  font-family: 'Times New Roman', Times, serif; 
+  font-weight: bold;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+#bookCardDescription .bookAuthor {
+  font-family: 'Times New Roman', Times, serif; 
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 18px;
+  color: #929292;
+}

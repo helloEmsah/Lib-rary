@@ -14,7 +14,6 @@ function Content() {
         <br />
         <div id="mainContent">
           <h1>List Book</h1>
-          <CardBook />
           {/* <div id="contentWrapper"></div> */}
         </div>
       </Container>

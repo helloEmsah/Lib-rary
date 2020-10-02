@@ -1,24 +1,29 @@
 import React from "react";
 import profileIcon from "../../Images/profileIcon.png";
-import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import   { Link }  from "react-router-dom";
 import { FaUser } from "react-icons/fa";
 import { MdLibraryBooks } from "react-icons/md";
 import { AiFillFileAdd } from "react-icons/ai";
 import { RiLogoutBoxRFill } from "react-icons/ri";
 import iconHeader from "../../Images/iconHeader.png";
 
+import fakePicture from "../../Dummy/Profile.json"
+
 function Sidebar() {
   return (
+    fakePicture.map(data => (
+
     <div>
       <Link to="/home">
         <img src={iconHeader} alt="" />
       </Link>
       <div id="userInfo">
         <div id="sidebarProfileImageContainer">
-          <img className="sidebarProfileImage" src={profileIcon} alt="" />
+          <img className="sidebarProfileImage" src={data.picture} alt="" />
         </div>
         <div className="userInfoName">
-          <h1>Linux</h1>
+          <h1>{data.name}</h1>
+
         </div>
       </div>
 
@@ -26,7 +31,7 @@ function Sidebar() {
       <div id="sidebarLink">
         <ul>
           <li>
-            <Link style={{ textDecoration: "none" }} to="/home">
+            <Link style={{ textDecoration: "none" }} to="/profile">
               <p className="linkText">
                 <FaUser /> Profile
               </p>
@@ -69,6 +74,7 @@ function Sidebar() {
         </li>
       </ul>
     </div>
+    ))
   );
 }
 
