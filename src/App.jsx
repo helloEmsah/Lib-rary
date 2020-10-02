@@ -5,29 +5,29 @@ import LandingPage from "./Pages/LandingPage";
 import Home from "./Pages/Home";
 import Sidebar from "./Components/Home/Sidebar";
 import MyLibrary from "./Components/Home/MyLibrary";
-import Profile from './Pages/Profile'
-import DetailBook from './Pages/DetailBook'
-import NotFound from "./Pages/NotFound";
-import readBook from './Components/Home/ReadBook'
-import Test from './Pages/test'
+import Profile from "./Pages/Profile";
+import DetailBook from "./Pages/DetailBook";
+import AddBook from "./Pages/AddBook";
+import TopNav from "./Components/Home/TopNav";
 import "./Styles/Index.css";
 function App() {
   return (
     <Router>
       <Switch>
         <Route exact path="/" component={LandingPage} />
-              <Route exact path="/detailbook" component={DetailBook} />
-              <Route exact path = "/readbook" component={readBook}/>
-              <Route exact path = "/test" component={Test}/>
+
         <Container fluid>
+          <TopNav />
           <Row>
-            <Col lg={3}>
+            <Col lg={2}>
               <Sidebar />
             </Col>
-            <Col lg={9}>
+            <Col lg={10}>
               <Route exact path="/home" component={Home} />
-              <Route exact path="/profile" component={Profile}/>
+              <Route exact path="/profile" component={Profile} />
               <Route exact path="/mylibrary" component={MyLibrary} />
+              <Route exact path="/addbook" component={AddBook} />
+              <Route exact path="/detailbook" component={DetailBook} />
             </Col>
           </Row>
         </Container>

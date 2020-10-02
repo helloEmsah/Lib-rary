@@ -1,18 +1,24 @@
-import React from 'react'
-import {ReactReader} from 'react-reader'
-import {Link} from 'react-router-dom'
-import Reader from './test'
+import React from "react";
+import { Container } from "react-bootstrap";
+import { useParams } from "react-router-dom";
+import fakeBook from "../Dummy/Book.json";
 
-function DetailBook(){
-  return(
+
+
+function DetailBook() {
+  const { id } = useParams;
+
+    const data = fakeBook.filter((item) => item.id == id))
+
+  return (
     <>
-    <div>
-      <h1>This is detail book</h1>
-  <button><Link to ='https://www.bookrix.com/book.html?bookID=albiorix_1319027101.9768350124'>Read</Link></button>
-  <Reader/>
-    </div>
-</>
-  )
+      <Container>
+        {fakeBook.map((data) => (
+          <h1>{data.title}</h1>
+        ))}
+      </Container>
+    </>
+  );
 }
 
-export default DetailBook
+export default DetailBook;

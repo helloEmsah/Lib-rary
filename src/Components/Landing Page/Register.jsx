@@ -23,25 +23,73 @@ function Register() {
         <Modal.Body>
           <Form>
             <Form.Group controlId="userEmail">
-              <Form.Control type="email" placeholder="Email" />
+              <Form.Control
+                style={{
+                  backgroundColor: "#D2D2D2",
+                  opacity: 0.25,
+                  color: "#333333",
+                }}
+                type="email"
+                placeholder="Email"
+              />
             </Form.Group>
             <Form.Group controlId="userPassword">
-              <Form.Control type="password" placeholder="Password" />
+              <Form.Control
+                style={{
+                  backgroundColor: "#D2D2D2",
+                  opacity: 0.25,
+                  color: "#333333",
+                }}
+                type="password"
+                placeholder="Password"
+              />
             </Form.Group>
             <Form.Group controlId="userFullName">
-              <Form.Control type="text" placeholder="Full Name" />
+              <Form.Control
+                style={{
+                  backgroundColor: "#D2D2D2",
+                  opacity: 0.25,
+                  color: "#333333",
+                }}
+                type="text"
+                placeholder="Full Name"
+              />
             </Form.Group>
             <Form.Group controlId="userGender">
-              <Form.Control as="select" defaultValue="Gender">
+              <Form.Control
+                style={{
+                  backgroundColor: "#D2D2D2",
+                  opacity: 0.25,
+                  color: "#333333",
+                }}
+                as="select"
+                defaultValue="Gender"
+              >
                 <option>Male</option>
                 <option>Female</option>
               </Form.Control>
             </Form.Group>
             <Form.Group controlId="userPhone">
-              <Form.Control type="text" placeholder="Phone" />
+              <Form.Control
+                style={{
+                  backgroundColor: "#D2D2D2",
+                  opacity: 0.25,
+                  color: "#333333",
+                }}
+                type="text"
+                placeholder="Phone"
+              />
             </Form.Group>
             <Form.Group controlId="userAddress">
-              <Form.Control type="text" placeholder="Address" />
+              <Form.Control
+                style={{
+                  backgroundColor: "#D2D2D2",
+                  opacity: 0.25,
+                  color: "#333333",
+                }}
+                type="text"
+                placeholder="Address"
+              />
             </Form.Group>
           </Form>
           <Button block style={style.orangeButton}>

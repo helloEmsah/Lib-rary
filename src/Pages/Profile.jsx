@@ -1,27 +1,22 @@
-import React from 'react'
-import {Container, Col, Row,  DropdownButton} from 'react-bootstrap'
-import {MdEmail, MdLocationOn} from 'react-icons/md'
-import {FaTransgender, FaPhoneAlt} from 'react-icons/fa'
+import React from "react";
+import { Container, Col, Row, DropdownButton } from "react-bootstrap";
+import { MdEmail, MdLocationOn } from "react-icons/md";
+import { FaTransgender, FaPhoneAlt } from "react-icons/fa";
 
-import fakeProfile from '../Dummy/Profile.json'
+import fakeProfile from "../Dummy/Profile.json";
 
-function Profile(){
-
-  return(
-    fakeProfile.map(data => (
-
+function Profile() {
+  return fakeProfile.map((data) => (
     <div id="profileWrapper">
-      <br/>
-      <br/>
       <h1 className="profileTitle">Profile</h1>
       <div className="profileBackground">
         <Container fluid className="profileArea">
           <Row>
             <Col lg={1}>
-              <MdEmail className="profileIcon"/>
-              <FaTransgender className="profileIcon"/>
-              <FaPhoneAlt className="profileIcon"/>
-              <MdLocationOn className="profileIcon"/>
+              <MdEmail className="profileIcon" />
+              <FaTransgender className="profileIcon" />
+              <FaPhoneAlt className="profileIcon" />
+              <MdLocationOn className="profileIcon" />
             </Col>
             <Col lg={7}>
               <p className="profileName">{data.email}</p>
@@ -35,22 +30,24 @@ function Profile(){
             </Col>
             <Col lg={4}>
               <div className="profilePictureContainer">
-              <img className="profilePictureImage" src={data.picture} alt=""/>
-            </div>
-            <br/>
+                <img
+                  className="profilePictureImage"
+                  src={data.picture}
+                  alt=""
+                />
+              </div>
+              <br />
               <DropdownButton variant="danger" title="Change Profile Picture">
                 <form action="/profile" method="post">
-                  <input type="file" name="avatar"/>
+                  <input type="file" name="avatar" />
                 </form>
               </DropdownButton>
             </Col>
-            </Row>
-
+          </Row>
         </Container>
       </div>
     </div>
-    ))
-  )
+  ));
 }
 
-export default Profile
+export default Profile;
