@@ -10,29 +10,34 @@ import DetailBook from "./Pages/DetailBook";
 import AddBook from "./Pages/AddBook";
 import TopNav from "./Components/Home/TopNav";
 import "./Styles/Index.css";
+
+import LoginContextProvider from "./Context/LoginContext";
+import PrivateRoute from './Pages/PrivateRoute/Private'
+
 function App() {
   return (
-    <Router>
-      <Switch>
-        <Route exact path="/" component={LandingPage} />
+    <LoginContextProvider>
+      <Router>
+        <Switch>
+          <Route exact path="/" component={LandingPage} />
 
-        <Container fluid>
-          <TopNav />
-          <Row>
-            <Col lg={2}>
-              <Sidebar />
-            </Col>
-            <Col lg={10}>
-              <Route exact path="/home" component={Home} />
-              <Route exact path="/profile" component={Profile} />
-              <Route exact path="/mylibrary" component={MyLibrary} />
-              <Route exact path="/addbook" component={AddBook} />
-              <Route exact path="/detailbook" component={DetailBook} />
-            </Col>
-          </Row>
-        </Container>
-      </Switch>
-    </Router>
+          <Container fluid>
+            <TopNav />
+            <Row>
+              <Col lg={2}>
+                <Sidebar />
+              </Col>
+              <Col lg={10}>
+                <PrivateRoute exact path="/home" component={Home} />
+                <PrivateRoute exact path="/profile" component={Profile} />
+                <PrivateRoute exact path="/mylibrary" component={MyLibrary} />
+                <PrivateRoute exact path="/addbook" component={AddBook} />
+              </Col>
+            </Row>
+          </Container>
+        </Switch>
+      </Router>
+    </LoginContextProvider>
   );
 }
 

@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useContext} from "react";
 import profileIcon from "../../Images/profileIcon.png";
 import { Link } from "react-router-dom";
 import { FaUser } from "react-icons/fa";
@@ -6,10 +6,12 @@ import { MdLibraryBooks } from "react-icons/md";
 import { AiFillFileAdd } from "react-icons/ai";
 import { RiLogoutBoxRFill } from "react-icons/ri";
 import TopNav from "./TopNav";
+import {LoginContext} from '../../Context/LoginContext'
 
 import fakePicture from "../../Dummy/Profile.json";
 
 function Sidebar() {
+  const [state, dispatch] = useContext(LoginContext)
   return (
     <div>
       {fakePicture.map((data) => (
@@ -61,7 +63,9 @@ function Sidebar() {
               textDecoration: "none",
               color: "#929292",
             }}
-            to="/"
+            to="/" onClick={() => dispatch({
+              type: "LOGOUT"
+            })}
           >
             <p className="linkTextSidebarLogout">
               <RiLogoutBoxRFill /> Logout
