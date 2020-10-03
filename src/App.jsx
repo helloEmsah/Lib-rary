@@ -4,17 +4,18 @@ import { Container, Row, Col } from "react-bootstrap";
 import LandingPage from "./Pages/LandingPage";
 import Home from "./Pages/Home";
 import Sidebar from "./Components/Home/Sidebar";
-import MyLibrary from "./Components/Home/MyLibrary";
+import MyLibrary from "./Pages/MyLibrary";
 import Profile from "./Pages/Profile";
 import DetailBook from "./Pages/DetailBook";
+import ReadBook from "./Pages/ReadBook";
 import AddBook from "./Pages/AddBook";
 import TopNav from "./Components/Home/TopNav";
-import AdminPages from './Pages/AdminPages'
+import AdminPages from "./Pages/AdminPages";
 
-import "./Styles/Index.css";
+import "./index.css";
 
 import LoginContextProvider from "./Context/LoginContext";
-import PrivateRoute from './Pages/PrivateRoute/Private'
+import PrivateRoute from "./Pages/PrivateRoute/Private";
 
 function App() {
   return (
@@ -22,7 +23,8 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/" component={LandingPage} />
-                <Route exact path ='/adminpages' component={AdminPages} />
+          <PrivateRoute exact path="/admin" component={AdminPages} />
+          <PrivateRoute exact path="/readbook/:id" component={ReadBook} />
 
           <Container fluid>
             <TopNav />
@@ -35,7 +37,11 @@ function App() {
                 <PrivateRoute exact path="/profile" component={Profile} />
                 <PrivateRoute exact path="/mylibrary" component={MyLibrary} />
                 <PrivateRoute exact path="/addbook" component={AddBook} />
-                <Route exact path="/detailbook" component={DetailBook} />
+                <PrivateRoute
+                  exact
+                  path="/detailbook/:id"
+                  component={DetailBook}
+                />
               </Col>
             </Row>
           </Container>

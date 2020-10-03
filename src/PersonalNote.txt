@@ -1,3 +1,10 @@
-Ganti link di Sidebar menjadi button
+To Do:
 
-Selesaikan DetailBook.jsx menggunakan useParams
+Add My Book below Profile
+Delete unnecessary file
+Fix folder structure
+Fix some UI
+Fix Transaction for admin
+Make Add Book for admin
+Make Top Navigation for admin
+Make slide presentation

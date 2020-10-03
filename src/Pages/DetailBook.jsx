@@ -1,57 +1,71 @@
 import React, { useState } from "react";
-import { Container, Row, Col, Card } from "react-bootstrap";
+import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import { useParams, useHistory } from "react-router-dom";
 import fakeBook from "../Dummy/Book.json";
-import imageTest from '../Images/profileIcon.png'
+import imageTest from "../Images/profileIcon.png";
+import style from "../Styles/styles";
 
 function DetailBook() {
   const { id } = useParams();
   const history = useHistory();
   const [show, setShow] = useState(false);
-  const data = fakeBook.filter((item) => item.id == id);
+  const data = fakeBook.filter((item) => item.id === parseInt(id));
 
   return (
     <>
       <Container>
         <Row>
           <Col lg={5}>
-            <img style={{display:"block", width: "300px", height: "350px"}} src={imageTest} alt=""/>
+            <div id="detailBookImageContainer">
+              <img className="detailBookImage" src={data[0].image} alt="" />
+            </div>
           </Col>
           <Col lg={7} className="d-flex flex-column ">
-            <h1>Title here</h1>
-            <p>Author here</p>
-            <h4>Publication Date</h4>
-            <p>date here</p>
-            <h4>Category</h4>
-            <p>category here</p>
-            <h4>Pages</h4>
-            <p>pages here</p>
-            <h4>ISBN</h4>
-            <p>isbn number here</p>
+            <div id="detailBookInfo">
+              <h1 className="bookTitle">{data[0].title}</h1>
+              <p className="regularText" style={{ fontSize: "20px" }}>
+                {data[0].author}
+              </p>
+              <p className="boldText">Publication Date</p>
+              <p className="regularText">{data[0].year}</p>
+              <p className="boldText">Category</p>
+              <p className="regularText">{data[0].category}</p>
+              <p className="boldText">Pages</p>
+              <p className="regularText">{data[0].pages}</p>
+              <p className="boldText" style={{ color: "#EE4622" }}>
+                ISBN
+              </p>
+              <p className="regularText">{data[0].ISBN}</p>
+            </div>
           </Col>
         </Row>
         <Row>
-          <hr/>
           <Col>
-            <h1>About book here</h1>
-<p>Lorem Ipsum Pala Kau</p>
-<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam ipsam maxime dignissimos impedit totam doloribus in officia est voluptatibus eos, veritatis quos distinctio perferendis atque aspernatur temporibus voluptas error. Ex.</p><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam ipsam maxime dignissimos impedit totam doloribus in officia est voluptatibus eos, veritatis quos distinctio perferendis atque aspernatur temporibus voluptas error. Ex.</p>
- 
+            <hr />
+            <br />
+            <div id="detailBookAbout">
+              <h1 className="about-desc">About This Book</h1>
+              <p className="paragraph">{data[0].about}</p>
+            </div>
           </Col>
         </Row>
-          <div className="d-flex justify-content-end">
-            
-            <button className='btn btn-danger'>
-Add Library
-            </button>
-            
-            <button className='btn btn-secondary'>
-Add Library
-            </button>
-          </div>
+        <br />
+        <div className="d-flex justify-content-end">
+          <Button style={style.orangeButton}>Add Library</Button>
+          <div className="mr-3" />
+          <Button
+            style={style.grayButton}
+            onClick={() => history.push(`/readbook/${data[0].id}`)}
+          >
+            Read Book
+          </Button>
+        </div>
+        <br />
+        <br />
+        <br />
       </Container>
     </>
- )
+  );
 }
 
 export default DetailBook;

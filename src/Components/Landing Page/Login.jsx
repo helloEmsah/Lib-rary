@@ -2,12 +2,11 @@ import React, { useState, useContext } from "react";
 import { Button, Modal, Form } from "react-bootstrap";
 import { LoginContext } from "../../Context/LoginContext";
 import style from "../../Styles/styles";
-import {useHistory} from "react-router-dom";
-
+import { useHistory } from "react-router-dom";
 
 function Login() {
- const history = useHistory() 
-  const [state, dispatch ]= useContext(LoginContext)
+  const history = useHistory();
+  const [state, dispatch] = useContext(LoginContext);
 
   const [show, setShow] = useState(false);
   const [formLogin, setFormLogin] = useState({
@@ -23,14 +22,20 @@ function Login() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (email === "user@root.com" && password === "root") {
-      console.log("Login Success");
+    if (email === "user@root.com" && password === "user") {
+      console.log("LOGIN AS USER");
       dispatch({
         type: "LOGIN",
-      })
-      history.push('/home')
+      });
+      history.push("/home");
+    } else if (email === "admin@root.com" && password === "admin") {
+      console.log("LOGIN AS ADMIN");
+      dispatch({
+        type: "LOGIN",
+      });
+      history.push("/admin");
     } else {
-      console.log("Login Fail");
+      console.log("INCORRECT EMAIL OR PASSWORD");
     }
   };
 
@@ -62,7 +67,7 @@ function Login() {
                 placeholder="Email"
                 value={email}
                 onChange={(e) => handleChange(e)}
-             />
+              />
             </Form.Group>
             <Form.Group controlId="userPassword">
               <Form.Control

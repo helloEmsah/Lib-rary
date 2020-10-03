@@ -40,16 +40,15 @@ function AddBook() {
               placeholder="About this book"
             />
           </Form.Group>
-          <div className="attachmentButton">
+          <div className="d-flex justify-content-between">
             <DropdownButton variant="secondary" title="Add Book">
               <form action="/addbook" method="post">
                 <input type="file" name="bookFile" />
-              </form>{" "}
+              </form>
             </DropdownButton>
-          </div>
-          <div className="submitBookButton" style={{ float: "right" }}>
+
             <Button style={style.orangeButton}>
-              Submit Book <TiDocumentAdd />{" "}
+              Submit Book <TiDocumentAdd />
             </Button>
           </div>
         </Form>
