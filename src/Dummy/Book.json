@@ -1,64 +1,33 @@
 [
   {
     "id": 1,
-    "title": " Smarter Way to Learn Javascript",
+    "title": "A Smarter Way to Learn Javascript",
     "author": "Mark Myers",
-    "publicationDate": 2013,
+    "year": 2013,
     "publisher": "Createspace Independent Publishing Platform",
     "pages": 288,
     "ISBN": 9781497408180,
     "image" : "https://i.pinimg.com/originals/4f/34/3d/4f343d17668c694807f76e2ce3283d9d.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Pro MERN Stack, 2nd Edition",
+    "author": "Vasan Subramanian",
+    "year": 2019,
+    "publisher": "Apress",
+    "pages": 568,
+    "ISBN": 1484243900,
+    "image" : "https://wish4book.com/uploads/posts/2019-06/1559464226_03.jpg"
   },
   {
 
-    "id": 1,
-    "title": "A Smarter Way to Learn Javascript",
-    "author": "Mark Myers",
-    "publicationDate": 2013,
-    "publisher": "Createspace Independent Publishing Platform",
-    "pages": 288,
-    "ISBN": 9781497408180,
-    "image" : "https://i.pinimg.com/originals/4f/34/3d/4f343d17668c694807f76e2ce3283d9d.jpg"
-  },
-
-  {
-    "id": 1,
-    "title": "A Smarter Way to Learn Javascript",
-    "author": "Mark Myers",
-    "publicationDate": 2013,
-    "publisher": "Createspace Independent Publishing Platform",
-    "pages": 288,
-    "ISBN": 9781497408180,
-    "image" : "https://i.pinimg.com/originals/4f/34/3d/4f343d17668c694807f76e2ce3283d9d.jpg"
-  },
-  {
-    "id": 1,
-    "title": "A Smarter Way to Learn Javascript",
-    "author": "Mark Myers",
-    "publicationDate": 2013,
-    "publisher": "Createspace Independent Publishing Platform",
-    "pages": 288,
-    "ISBN": 9781497408180,
-    "image" : "https://i.pinimg.com/originals/4f/34/3d/4f343d17668c694807f76e2ce3283d9d.jpg"
-  },
-  {
-    "id": 1,
-    "title": "A Smarter Way to Learn Javascript",
-    "author": "Mark Myers",
-    "publicationDate": 2013,
-    "publisher": "Createspace Independent Publishing Platform",
-    "pages": 288,
-    "ISBN": 9781497408180,
-    "image" : "https://i.pinimg.com/originals/4f/34/3d/4f343d17668c694807f76e2ce3283d9d.jpg"
-  },
-  {
-    "id": 1,
-    "title": "A Smarter Way to Learn Javascript",
-    "author": "Mark Myers",
-    "publicationDate": 2013,
-    "publisher": "Createspace Independent Publishing Platform",
-    "pages": 288,
-    "ISBN": 9781497408180,
-    "image" : "https://i.pinimg.com/originals/4f/34/3d/4f343d17668c694807f76e2ce3283d9d.jpg"
+    "id": 3,
+    "title": "How to Write Better Essays",
+    "author": "Bryan Greetham",
+    "year": 2007,
+    "publisher": "Palgrave Study Skills",
+    "pages": 298,
+    "ISBN": 1137293284,
+    "image" : "https://s.pdfdrive.com/assets/thumbs/1af/1af3f1cbe06c29843d36b1f53a36b32f.jpg"
   }
 ]

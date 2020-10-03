@@ -9,6 +9,8 @@ import Profile from "./Pages/Profile";
 import DetailBook from "./Pages/DetailBook";
 import AddBook from "./Pages/AddBook";
 import TopNav from "./Components/Home/TopNav";
+import AdminPages from './Pages/AdminPages'
+
 import "./Styles/Index.css";
 
 import LoginContextProvider from "./Context/LoginContext";
@@ -20,6 +22,7 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/" component={LandingPage} />
+                <Route exact path ='/adminpages' component={AdminPages} />
 
           <Container fluid>
             <TopNav />
@@ -32,6 +35,7 @@ function App() {
                 <PrivateRoute exact path="/profile" component={Profile} />
                 <PrivateRoute exact path="/mylibrary" component={MyLibrary} />
                 <PrivateRoute exact path="/addbook" component={AddBook} />
+                <Route exact path="/detailbook" component={DetailBook} />
               </Col>
             </Row>
           </Container>

@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "no": "1",
+    "userOrAuthor": "Pala Kau",
+    "ISBN": "01234567890",
+    "ebook": "Cara nampol pala kau",
+    "statusPayment": "Ngutang",
+    "action": "true"
+  },
+  {
+    "id": 2,
+    "no": "2",
+    "userOrAuthor": "Patrick Star",
+    "ISBN": "4513548735",
+    "ebook": "The Jobless",
+    "statusPayment": "Approve",
+    "action": "false"
+  },
+
+  {
+    "id": 3,
+    "no": "2",
+    "userOrAuthor": "Goku",
+    "ISBN": "15346842311",
+    "ebook": "Super Saiyan",
+    "statusPayment": "Approve",
+    "action": "true"
+  }
+]
