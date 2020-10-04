@@ -1,30 +1,35 @@
 [
   {
     "id": 1,
-    "no": "1",
     "userOrAuthor": "Pala Kau",
     "ISBN": "01234567890",
     "ebook": "Cara nampol pala kau",
-    "statusPayment": "Ngutang",
+    "status": 1,
     "action": "true"
   },
   {
     "id": 2,
-    "no": "2",
     "userOrAuthor": "Patrick Star",
     "ISBN": "4513548735",
     "ebook": "The Jobless",
-    "statusPayment": "Approve",
+    "status": 0,
     "action": "false"
   },
 
   {
     "id": 3,
-    "no": "2",
     "userOrAuthor": "Goku",
     "ISBN": "15346842311",
-    "ebook": "Super Saiyan",
-    "statusPayment": "Approve",
+    "ebook": "How to become Super Saiyan",
+    "status": 2,
+    "action": "true"
+  },
+  {
+    "id": 4,
+    "userOrAuthor": "Saitama",
+    "ISBN": "4513845614",
+    "ebook": "A Hundred Push Up!",
+    "status": 2,
     "action": "true"
   }
 ]

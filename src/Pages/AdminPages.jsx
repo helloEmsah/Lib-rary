@@ -1,36 +1,68 @@
 import React from "react";
 import { Dropdown, DropdownButton, Table, Container } from "react-bootstrap";
-import TopNav from "../Components/Home/TopNav";
+import TopNavAdmin from "../Components/Home/TopNavAdmin";
 import transactionData from "../Dummy/Transaction.json";
 
 function AdminPages() {
   return (
     <div id="admingPagesWrapper">
-      <TopNav />
+      <TopNavAdmin />
+      <br />
       <Container>
-        <h1>this is admin pages</h1>
+        <h3>
+          <strong>Book Verification</strong>
+        </h3>
         <div className="admin-bg">
           <Table borderless hover>
             <thead>
               <tr>
-                <th>No</th>
-                <th>User orAuthor</th>
-                <th>ISBN</th>
-                <th>E-Book</th>
-                <th>Status Payment</th>
-                <th>Action</th>
+                <th>
+                  <strong>No</strong>
+                </th>
+                <th>
+                  <strong>User / Author</strong>
+                </th>
+                <th>
+                  <strong>ISBN</strong>
+                </th>
+                <th>
+                  <strong>E-book</strong>
+                </th>
+                <th>
+                  <strong>Status</strong>
+                </th>
+                <th>
+                  <strong>Action</strong>
+                </th>
               </tr>
             </thead>
             {transactionData.map((data) => (
               <tbody striped>
                 <tr>
-                  <td>{data.no}</td>
+                  <td>{data.id}</td>
                   <td>{data.userOrAuthor}</td>
                   <td>{data.ISBN}</td>
                   <td>{data.ebook}</td>
-                  <td>{data.statusPayment}</td>
+                  <td
+                    style={{
+                      color:
+                        data.status === 0
+                          ? "#0ACF83"
+                          : data.status === 1
+                          ? "#FF0742"
+                          : "#F7941E",
+                    }}
+                  >
+                    <strong>
+                      {data.status === 0
+                        ? "Approve"
+                        : data.status === 1
+                        ? "Cancel"
+                        : "Waiting to be verified"}
+                    </strong>
+                  </td>
                   <td>
-                    <DropdownButton title="Status">
+                    <DropdownButton variant="info" title="Status">
                       <Dropdown.Item>Approve</Dropdown.Item>
                       <Dropdown.Item>Cancel</Dropdown.Item>
                     </DropdownButton>
