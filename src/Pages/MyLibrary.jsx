@@ -11,7 +11,7 @@ function MyLibrary() {
   return (
     <Container>
       <h1
-        style={{
+        style={{ fontFamily: 'Times New Roman',
           fontWeight: "bold",
           fontSize: 30,
           lineHeight: "37px",

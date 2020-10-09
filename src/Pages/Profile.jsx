@@ -37,7 +37,7 @@ function Profile() {
                 />
               </div>
               <br />
-              <DropdownButton variant="danger" title="Change Profile Picture">
+              <DropdownButton variant="danger" title="Upload Profile Image">
                 <form action="/profile" method="post">
                   <input type="file" name="avatar" />
                 </form>
@@ -47,7 +47,7 @@ function Profile() {
         </Container>
       </div>
       <br />
-      <h4>My Book</h4>
+      <h4 className="profileMyBook">My Book</h4>
     </div>
   ));
 }

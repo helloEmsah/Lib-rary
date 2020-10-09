@@ -1,11 +1,11 @@
 [
   {
     "id": 1,
-    "picture": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F1.bp.blogspot.com%2F-Amkwc6OfYvs%2FUd9-mMSYbrI%2FAAAAAAAABso%2FUgC7VmpBzN0%2Fs1600%2Fboldandbrash.jpg&f=1&nofb=1",
-    "name": "User",
-    "email": "squidwardTentacle@protonmail.com",
+    "picture": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi0.wp.com%2F365webresources.com%2Fwp-content%2Fuploads%2F2016%2F09%2FFREE-PROFILE-AVATARS.png%3Fresize%3D502%252C494%26ssl%3D1&f=1&nofb=1",
+    "name": "Test",
+    "email": "test@root.com",
     "gender": "Male",
     "phone": "08123456789",
-    "address": "122 Conch Street"
+    "address": "Jl Pegangsaan Timur no 56"
   }
 ]

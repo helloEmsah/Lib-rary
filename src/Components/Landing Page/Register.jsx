@@ -28,6 +28,7 @@ function Register() {
                   backgroundColor: "#D2D2D2",
                   opacity: 0.25,
                   color: "#333333",
+                  borderColor: "black"
                 }}
                 type="email"
                 placeholder="Email"
@@ -39,6 +40,7 @@ function Register() {
                   backgroundColor: "#D2D2D2",
                   opacity: 0.25,
                   color: "#333333",
+                  borderColor: "black"
                 }}
                 type="password"
                 placeholder="Password"
@@ -50,6 +52,7 @@ function Register() {
                   backgroundColor: "#D2D2D2",
                   opacity: 0.25,
                   color: "#333333",
+                  borderColor: "black"
                 }}
                 type="text"
                 placeholder="Full Name"
@@ -61,6 +64,7 @@ function Register() {
                   backgroundColor: "#D2D2D2",
                   opacity: 0.25,
                   color: "#333333",
+                  borderColor: "black"
                 }}
                 as="select"
                 defaultValue="Gender"
@@ -75,6 +79,7 @@ function Register() {
                   backgroundColor: "#D2D2D2",
                   opacity: 0.25,
                   color: "#333333",
+                  borderColor: "black"
                 }}
                 type="text"
                 placeholder="Phone"
@@ -86,6 +91,7 @@ function Register() {
                   backgroundColor: "#D2D2D2",
                   opacity: 0.25,
                   color: "#333333",
+                  borderColor: "black"
                 }}
                 type="text"
                 placeholder="Address"

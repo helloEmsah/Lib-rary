@@ -1,10 +1,10 @@
 [
   {
     "id": 1,
-    "userOrAuthor": "Pala Kau",
+    "userOrAuthor": "Spongebob Squarepants",
     "ISBN": "01234567890",
-    "ebook": "Cara nampol pala kau",
-    "status": 1,
+    "ebook": "F is FUN",
+    "status": 0,
     "action": "true"
   },
   {
@@ -12,7 +12,7 @@
     "userOrAuthor": "Patrick Star",
     "ISBN": "4513548735",
     "ebook": "The Jobless",
-    "status": 0,
+    "status": 1,
     "action": "false"
   },
 

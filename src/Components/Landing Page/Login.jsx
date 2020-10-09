@@ -62,6 +62,12 @@ function Login() {
           >
             <Form.Group controlId="userEmail">
               <Form.Control
+                style={{
+                  backgroundColor: "#D2D2D2",
+                  opacity: 0.25,
+                  color: "#333333",
+                  borderColor: "black"
+                }}
                 type="email"
                 name="email"
                 placeholder="Email"
@@ -76,6 +82,12 @@ function Login() {
                 placeholder="Password"
                 value={password}
                 onChange={(e) => handleChange(e)}
+                style={{
+                  backgroundColor: "#D2D2D2",
+                  opacity: 0.25,
+                  color: "#333333",
+                  borderColor: "black"
+                }}
               />
             </Form.Group>
             <Form.Group>

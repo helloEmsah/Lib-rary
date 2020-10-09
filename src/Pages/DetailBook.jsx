@@ -1,14 +1,12 @@
-import React, { useState } from "react";
-import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import React from "react";
+import { Container, Row, Col,  Button } from "react-bootstrap";
 import { useParams, useHistory } from "react-router-dom";
 import fakeBook from "../Dummy/Book.json";
-import imageTest from "../Images/profileIcon.png";
 import style from "../Styles/styles";
 
 function DetailBook() {
   const { id } = useParams();
   const history = useHistory();
-  const [show, setShow] = useState(false);
   const data = fakeBook.filter((item) => item.id === parseInt(id));
 
   return (

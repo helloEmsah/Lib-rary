@@ -2,8 +2,13 @@ import React from "react";
 
 function NotFound() {
   return (
-    <div>
-      <h1>404 NOT FOUND</h1>
+    <div
+      className="text-center"
+      style={{ margin: "auto", width: "auto", padding: "10px" }}
+    >
+      <h1>
+        <strong>404 NOT FOUND</strong>
+      </h1>
     </div>
   );
 }

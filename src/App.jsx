@@ -23,7 +23,7 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/" component={LandingPage} />
-          <Route exact path="/admin" component={AdminPages} />
+          <PrivateRoute exact path="/admin" component={AdminPages} />
           <PrivateRoute exact path="/readbook/:id" component={ReadBook} />
 
           <Container fluid>
